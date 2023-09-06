@@ -1,0 +1,34 @@
+// 字体大小
+
+$fontSizes: 12, 14, 16, 18, 20, 22, 24;
+
+@each $animal in $fontSizes {
+	.f-#{$animal} {
+		font-size: #{$animal}px;
+	}
+}
+
+// 位置
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+
+$sizes: 100, 200, 300, 400, 500, 600, bold;
+
+@each $animal in $sizes {
+	.fw-#{$animal} {
+		font-weight: #{$animal};
+	}
+}
+
+.lin1 {
+	line-height: 1;
+}

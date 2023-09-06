@@ -1,15 +1,15 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-	</view>
-	<view class="">
-		
+		<button @click="toLogin">去登录</button>
 	</view>
 </template>
 
-<script setup lang="ts">
+<script setup>
+const toLogin = () => {
+	uni.navigateTo({
+		url: '/pages/login'
+	})
+}
 </script>
 
-<style>
-	
-</style>
+<style lang="scss" scoped></style>

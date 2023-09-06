@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dist/
+.runProject
+.hbuilderx
+unpackage/
+uni_modules/
+.vscode/

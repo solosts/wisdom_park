@@ -1,0 +1,70 @@
+@import './font.scss'; //整体相关
+@import './flex.scss'; //flex相关
+@import './border.scss'; //边框相关
+@import './spacing.scss'; //间边相关  内外边距
+@import './length.scss'; //长度相关  宽高
+
+view {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  color: #606266;
+  font-size: 12px;
+}
+
+$colorList: (
+  5aa,
+  #5aa9f8),
+  (273, #273564),
+  (999, #999),
+  (fff, #fff),
+  (169, #1690fb),
+  (ccc, #ccccc9
+);
+
+@each $name,
+$color in $colorList {
+  .color-#{$name} {
+    color: #{$color};
+  }
+
+  .back-#{$name} {
+    background-color: #{$color};
+  }
+}
+
+$indexSizes: 0, 1, 2;
+
+@each $index in $indexSizes {
+  .z-#{$index} {
+    position: relative;
+    z-index: #{$index};
+  }
+}
+
+/** 全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 3px !important;
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px !important;
+  background: #e4e4e4 !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
