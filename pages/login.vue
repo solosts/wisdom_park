@@ -4,7 +4,7 @@
     <view class="f-14 mar-top-90">本机号码一键登录</view>
     <view class="phone-box fw-bold">177****0936</view>
     <view class="f-14 mar-top-12 f-12 color-5aa">其他号码登录</view>
-    <view class="icon-box">
+    <view class="icon-box" @click="login">
       <uni-icons type="arrow-right" size="32" color="#fff"></uni-icons>
     </view>
 
@@ -32,6 +32,25 @@ import { ref } from 'vue'
 const isReader = ref(false)
 const changeReader = () => {
   isReader.value = !isReader.value
+}
+const login = () => {
+  if (!isReader.value) {
+    return uni.showToast({
+      title: '请先阅读协议！',
+      icon: 'error',
+      duration: 2000
+    });
+  }
+  uni.showToast({
+    title: '请先阅读协议！',
+    duration: 2000,
+    success: () => {
+      uni.navigateTo({
+        url: '/pages/index'
+      })
+    }
+  });
+
 }
 </script>
 
