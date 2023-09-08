@@ -7,9 +7,21 @@
 			}
 		},
 		{
-			"path": "pages/index",
+			"path": "pages/tourist/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "智慧园区"
+			}
+		},
+		{
+			"path": "pages/enterprises/index",
+			"style": {
+				"navigationBarTitleText": "智慧园区"
+			}
+		},
+		{
+			"path": "pages/property/index",
+			"style": {
+				"navigationBarTitleText": "智慧园区"
 			}
 		}
 	],

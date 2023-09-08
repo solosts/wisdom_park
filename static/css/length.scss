@@ -29,19 +29,25 @@
 	height: auto !important;
 }
 
-$distance: 36, 60, 100, 200, 300, 400, 500, 600;
+$distance: 26, 36, 40, 60, 54, 70, 100, 120, 200, 300, 400, 500, 600;
 
 // 宽 width
 @each $animal in $distance {
+	.wh#{$animal} {
+		width: #{$animal}px;
+		height: #{$animal}px;
+	}
+
 	.w#{$animal} {
 		width: #{$animal}px;
 	}
-}
 
-// 高 height
-@each $animal in $distance {
 	.h#{$animal} {
 		height: #{$animal}px;
+	}
+
+	.line-h#{$animal} {
+		line-height: #{$animal}px;
 	}
 }
 

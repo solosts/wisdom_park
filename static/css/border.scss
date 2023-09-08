@@ -9,3 +9,29 @@
 .bor-bot {
 	border-bottom: 1px solid #e5e6e7;
 }
+
+
+
+$radSizes: 0, 8, 10, 25;
+
+@each $index in $radSizes {
+	.bor-rad-#{$index} {
+		border-radius: #{$index}px;
+	}
+
+	.bor-rad-top-#{$index} {
+		border-radius: #{$index}px #{$index}px 0 0;
+	}
+
+	.bor-rad-bot-#{$index} {
+		border-radius: 0 0 #{$index}px #{$index}px;
+	}
+
+	.bor-rad-left-#{$index} {
+		border-radius: #{$index}px 0 0 #{$index}px;
+	}
+
+	.bor-rad-right-#{$index} {
+		border-radius: 0 #{$index}px #{$index}px 0;
+	}
+}

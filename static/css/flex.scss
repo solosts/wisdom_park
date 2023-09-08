@@ -30,7 +30,8 @@
 
 .flex-col-center {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .flex-col-start {
@@ -39,14 +40,33 @@
 	justify-content: flex-start;
 }
 
+.flex-col-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .flex-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
 }
 
+.align-cen {
+	align-items: center;
+}
+
+//flex
+$flexSizes: none, 1, 2, 3;
+
+@each $animal in $flexSizes {
+	.flex-#{$animal} {
+		flex: #{$animal};
+	}
+}
+
 // gap
-$gapSizes: 6, 10, 20, 30;
+$gapSizes: 2, 4, 6, 8, 10, 20, 30;
 
 @each $animal in $gapSizes {
 	.gap#{$animal} {

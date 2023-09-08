@@ -18,7 +18,7 @@
       <view class="mar-top-20 flex-center gap6">
         <uni-icons v-if="!isReader" type="circle" size="14" color="#CCCCC9" @click="changeReader"></uni-icons>
         <uni-icons v-if="isReader" type="circle-filled" size="14" color="#1684fc" @click="changeReader"></uni-icons>
-        <view class="color-999">我已阅读并同意
+        <view class="color-999 f-12">我已阅读并同意
           <span class="color-169">《服务协议》</span>和<span class="color-169">《隐私政策》</span>
         </view>
       </view>
@@ -46,7 +46,7 @@ const login = () => {
     duration: 2000,
     success: () => {
       uni.navigateTo({
-        url: '/pages/index'
+        url: '/pages/tourist/index'
       })
     }
   });

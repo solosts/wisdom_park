@@ -1,10 +1,11 @@
-@import './font.scss'; //整体相关
+@import '../iconfont/iconfont.css'; //引入字体图标
+@import './font.scss'; //字体相关
 @import './flex.scss'; //flex相关
 @import './border.scss'; //边框相关
 @import './spacing.scss'; //间边相关  内外边距
 @import './length.scss'; //长度相关  宽高
 
-view {
+page {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -14,8 +15,16 @@ view {
   color: inherit;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
-  color: #606266;
   font-size: 12px;
+}
+
+view {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
 }
 
 $colorList: (
@@ -25,6 +34,13 @@ $colorList: (
   (999, #999),
   (fff, #fff),
   (169, #1690fb),
+  (4bd, #4bd3f1),
+  (3ae, #3ae0d4),
+  (2bc, #2bcbee 85%),
+  (17d, #17dbcd 85%),
+  (ff7, #ff7f00),
+  (333, #333),
+  (999, #999),
   (ccc, #ccccc9
 );
 

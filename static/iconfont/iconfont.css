@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('./iconfont.ttf')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daohang:before {
+  content: "\e614";
+}
+
+.icon-wendang:before {
+  content: "\e99c";
+}
+
+.icon-a-zu51:before {
+  content: "\e67a";
+}
+
+.icon-fuwu:before {
+  content: "\e611";
+}
+
+.icon-gongsi1:before {
+  content: "\e679";
+}
