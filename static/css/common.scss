@@ -24,7 +24,6 @@ view {
   list-style: none;
   border: 0;
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
 }
 
 $colorList: (
@@ -39,7 +38,9 @@ $colorList: (
   (2bc, #2bcbee 85%),
   (17d, #17dbcd 85%),
   (ff7, #ff7f00),
+  (ff8, #fff8f2),
   (333, #333),
+  (666, #666),
   (999, #999),
   (ccc, #ccccc9
 );

@@ -29,7 +29,7 @@
 	height: auto !important;
 }
 
-$distance: 26, 36, 40, 60, 54, 70, 100, 120, 200, 300, 400, 500, 600;
+$distance: 22, 26, 36, 40, 60, 54, 70, 90, 100, 120, 130, 200, 300, 400, 500, 600;
 
 // 宽 width
 @each $animal in $distance {

@@ -32,3 +32,14 @@ $sizes: 100, 200, 300, 400, 500, 600, bold;
 .lin1 {
 	line-height: 1;
 }
+
+@each $animal in 1, 2, 3 {
+	.row-#{$animal} {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: #{$animal};
+		word-break: break-all;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}

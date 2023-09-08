@@ -1,5 +1,5 @@
 // 边距
-$sizes: -10, 0, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 90, 100;
+$sizes: -10, 0, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 32, 90, 100;
 
 @each $animal in $sizes {
 
@@ -21,11 +21,13 @@ $sizes: -10, 0, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 90, 100;
 	}
 
 	.mar-tb-#{$animal} {
-		margin: #{$animal}px 0;
+		margin-top: #{$animal}px;
+		margin-bottom: #{$animal}px;
 	}
 
 	.mar-lr-#{$animal} {
-		margin: 0 #{$animal}px;
+		margin-left: #{$animal}px;
+		margin-right: #{$animal}px;
 	}
 
 	.mar-#{$animal} {
@@ -50,11 +52,13 @@ $sizes: -10, 0, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 90, 100;
 	}
 
 	.pad-tb-#{$animal} {
-		padding: #{$animal}px 0;
+		padding-top: #{$animal}px;
+		padding-bottom: #{$animal}px;
 	}
 
 	.pad-lr-#{$animal} {
-		padding: 0 #{$animal}px;
+		padding-left: #{$animal}px;
+		padding-right: #{$animal}px;
 	}
 
 	.pad-#{$animal} {

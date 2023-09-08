@@ -66,7 +66,7 @@ $flexSizes: none, 1, 2, 3;
 }
 
 // gap
-$gapSizes: 2, 4, 6, 8, 10, 20, 30;
+$gapSizes: 2, 4, 6, 8, 10, 12, 20, 30;
 
 @each $animal in $gapSizes {
 	.gap#{$animal} {
